@@ -1,0 +1,119 @@
+.lutas {
+    font-family: 'Press Start 2P', monospace;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.lutas_titulo {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.lutas_subtitulo {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1.1em;
+}
+
+.lutas_lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.luta_item {
+    background-color: var(--second-color);
+    border: 4px solid var(--third-color);
+    border-radius: 20px;
+    padding: 1.2em;
+    width: 90%;
+    text-align: center;
+}
+
+.luta_img {
+    display: none;
+}
+
+.luta_item.destaque {
+    background-color: #00f8cc;
+    color: #002244;
+    border-color: #001c3d;
+}
+
+.luta_item h3 {
+    font-size: 16px;
+    margin-bottom: 0.7em;
+}
+
+.luta_item p {
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+.luta_button {
+    font-size: 14px;
+    padding: 1em;
+    margin: 1.5em 1em 0.1em 1em;
+    border: 4px solid var(--third-color);
+    border-radius: 15px;
+}
+
+.luta_button:hover {
+    background-color: var(--third-color);
+    color: var(--first-color);
+}
+
+.luta_button.destaque {
+    border: #001c3d 4px solid;
+}
+
+.luta_button.destaque:hover {
+    background-color: #001c3d;
+    color: var(--first-color);
+}
+ 
+@media screen and (min-width: 1024px) {
+
+    .lutas{
+        align-items: center;
+    }
+
+    .lutas_titulo {
+        font-size: 40px;
+    }
+
+    .lutas_subtitulo {
+        font-size: 22px;
+    }
+
+    .lutas_lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .luta_img {
+        display: block;
+        width: 16vw;
+        height: 12vw;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+    }
+
+    .luta_item {
+        width: 300px;
+        padding: 1.5em;
+    }
+
+    .luta_item h3 {
+        font-size: 24px;
+    }
+}

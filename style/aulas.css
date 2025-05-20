@@ -1,0 +1,79 @@
+.aulas_especiais {
+    background-image: url("../Assets/fundo aulas.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.aulas_especiais_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 1em;
+    text-align: center;
+}
+
+.aulas_especiais_subtitulo {
+    display: none;
+}
+
+.aulas_especiais_button {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    color: var(--first-color);
+    background: #00f8cc;
+    padding: 8px 1px;
+    text-decoration: none;
+    display: inline-block;
+    border: 5px solid var(--first-color);
+    text-align: center;
+    border-radius: 12px;
+    width: 20vh;
+    margin-bottom: 2em;
+}
+
+.aulas_especiais_button:hover {
+    color: red;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .aulas_especiais {
+    height: 100%;
+    }
+
+    .aulas_especiais_titulo {
+        display: flex;
+        font-size: 24px;
+        padding: 1.5em 0 0 0;
+        flex-wrap: nowrap;
+    }
+
+    .aulas_especiais_subtitulo {
+        display: flex;
+        font-size: 20px;
+        padding: 1.5em 0;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aulas_especiais_button {
+        font-size: 16px;
+        width: 35vh;
+        padding: 15px 2px;
+    }
+
+    .aulas_especiais_button:active {
+        background-color: #028f75;
+    }
+}
