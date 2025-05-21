@@ -31,6 +31,7 @@
     transition: transform 0.2s ease-in-out;
     width: 100%;
     text-align: center;
+    line-height: 1.4;
 }
 
 .suplemento_item:hover {
